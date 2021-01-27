@@ -1,9 +1,9 @@
-const paragraph=document.querySelector('p');
-paragraph.innerHTML=paragraph.innerText
-.split(' ')
-.map(word=>word.length>8?`<span style:"background-color:red">
-${word}</span>`:word)
-.join(' ');
+const paragraph = document.querySelector('p');
+paragraph.innerHTML = paragraph.innerText
+    .split(' ')
+    .map(word => word.length > 8 ? `<span style="background-color:pink">
+${word}</span>` : word)
+    .join(' ');
 
 // Exercise 2
 
@@ -28,8 +28,9 @@ document.body.insertBefore(wordCountElem, paragraph);
 //Exercise 5
 
 Array.from(document.querySelectorAll('p'))
-.forEach (p=>{p.innerHTML=p.innerHTML
-.replace(/\?/g,'😀')
-.replace(/\!/g,'😸');
+    .forEach(p => {
+        p.innerHTML = p.innerHTML
+            .replace(/\?/g, '😀')
+            .replace(/\!/g, '😸');
 
-})
+    })
